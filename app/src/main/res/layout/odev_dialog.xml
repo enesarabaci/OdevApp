@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/dialog_ders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:gravity="center"
+                android:textColor="@color/colorFFFFFF"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:paddingVertical="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/colorBlack"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dialog_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="28"
+                android:gravity="center"
+                android:textColor="@color/colorFFFFFF"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:gravity="center"
+                android:textColor="@color/colorFFFFFF"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/dialog_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12"
+                android:gravity="center"
+                android:textColor="@color/colorFFFFFF"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:gravity="center"
+                android:textColor="@color/colorFFFFFF"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/dialog_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="99"
+                android:gravity="center"
+                android:textColor="@color/colorFFFFFF"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dialog_konu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/bauhausb"
+                android:textColor="@color/colorBlack"
+                android:gravity="center_horizontal"
+                android:padding="2dp"
+                android:text="Matematik dersi sayfa 12 13 14 yapılacak falan filan"
+                android:scrollbars="vertical" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/dialog_yapildi"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorBlack"
+                android:text="YAPILDI"
+                android:textColor="@color/colorFFFFFF"/>
+            <Button
+                android:id="@+id/dialog_sil"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorBlack"
+                android:text="SİL"
+                android:textColor="@color/colorFFFFFF"/>
+            <Button
+                android:id="@+id/dialog_duzenle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorBlack"
+                android:text="DÜZENLE"
+                android:textColor="@color/colorFFFFFF"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

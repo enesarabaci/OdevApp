@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navigation"
+    app:startDestination="@id/odevFragment">
+
+    <fragment
+        android:id="@+id/odevFragment"
+        android:name="com.enesarabaci.odevapp.view.OdevFragment"
+        android:label="OdevFragment" >
+        <action
+            android:id="@+id/action_odevFragment_to_derslerFragment"
+            app:destination="@id/derslerFragment" />
+        <action
+            android:id="@+id/action_odevFragment_to_addOdevFragment"
+            app:destination="@id/addOdevFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/derslerFragment"
+        android:name="com.enesarabaci.odevapp.view.DerslerFragment"
+        android:label="DerslerFragment" >
+        <action
+            android:id="@+id/action_derslerFragment_to_odevFragment"
+            app:destination="@id/odevFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addOdevFragment"
+        android:name="com.enesarabaci.odevapp.view.CreateOdevFragment"
+        android:label="AddOdevFragment" >
+        <action
+            android:id="@+id/action_addOdevFragment_to_odevFragment"
+            app:destination="@id/odevFragment" />
+        <argument
+            android:name="uuid"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+</navigation>
